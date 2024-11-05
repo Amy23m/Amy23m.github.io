@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="one-container.css">
+    <title>Amy profile</title>
+    <script>
+
+            * {
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+}
+
+body {
+    background-color: rgb(23, 55, 114);
+    display: flex;
+
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    z-index: 1;
+}
+
+#profile-pic{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background-image: url('https://pic1.mangapicgallery.com/r/album/31/md_/598665_8884800.jpeg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    z-index: 1;
+}
+
+.content{
+    background-color: rgb(63, 101, 171);
+    width: 800px;
+    height: 600px;
+    
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+}
+
+#intro{
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 40px;
+       text-align: center;
+       color: white;
+}
+
+nav{
+    background-color: rgb(63, 101, 171);
+    color: green;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav>a button{
+     background-color: green;
+     width: 150px;
+     height: 50px;
+     border-radius: 20px;
+     text-align: center;
+     border-color: green;
+     border-width: 0px;
+     border-style: none;
+     color: white;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 24px;
+     font-weight: 400;
+     text-decoration: none;
+     margin-top: 20px;
+
+}
+
+nav>a:hover button {
+    background-color: rgb(0, 81, 0);
+    color: green;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    text-decoration: none;
+    border-color: green;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 20px;
+}
+
+#about-text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    margin-top: 60px;
+    color: white;
+    
+}
+      
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div id="profile-pic"></div>
+           <div class="content">
+            <p id="intro"> hi, amy here.</p>
+           <nav>
+            <a href="#about"><button>About</button></a>
+            <a href="#why"><button>Why</button></a>
+            <a href="#contact"><button>Contact</button></a>
+           </nav>
+
+
+           <section id="about-text">
+            I am a 20yr old student studying computer science at ASU. I love to design things,  read manga and singing.
+            My goal is to work at a tech company that makes robots or AI. 
+           </section>
+
+           </div>
+
+    </div>
+    
+</body>
+</html>
