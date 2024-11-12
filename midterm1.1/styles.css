@@ -1,0 +1,198 @@
+/* Home links */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* transition */
+a, .btn {
+    transition: all 300ms ease;
+}
+
+nav, .nav-links{
+     display: flex;
+}
+
+nav{
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+ a:hover {
+    color: rgb(52, 235, 2);
+    text-decoration-color: black;
+ }
+
+/*sections*/
+section {
+     padding-top: 0.5vh;
+     height: 20vh;
+     margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container{
+    display: flex;
+}
+
+/* profile Section */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 0rem;
+    height: 30vh;
+}
+
+.section__pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.section__text{
+    margin-top: 5rem;
+    margin-bottom: 0px;
+}
+
+.section__text__p2 {
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 18px;
+   margin-top: rem;
+}
+
+.title{
+    font-size: 30px;
+    color: rgb(48, 211, 3);
+}
+
+#socials-container{
+    display: flex;
+    margin-left: 6rem;
+    margin-top: -3rem;
+
+}
+  
+.icon{
+       cursor: pointer;
+       height: 4.5rem;
+}
+
+/* Buttons */
+
+.btn-container{
+    display: flex;
+    gap: 5rem;
+}
+
+.btn{
+     font-weight: 300;
+     transition: all 300ms ease;
+     padding: 5px;
+     width: 6rem;
+     border-radius: 0.5rem;
+     margin-top: 2rem;
+     text-align: center;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(48, 211, 3);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* Tech Stack */
+.tech-stack {
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.tech-stack h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(48, 211, 3);
+}
+
+.stack-icons {
+    display: flex;
+    justify-content: center; /* Horizontally center icons */
+    align-items: center;     /* Vertically center icons */
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;         /* Allow wrapping of icons if there isn't enough space */
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+
+.tech-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.tech-item p {
+    font-size: 20;
+    font-weight: light;
+
+}
