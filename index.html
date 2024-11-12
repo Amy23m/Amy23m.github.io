@@ -1,96 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introduction</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./project.html">projects</a></li>
+                <li><a href="https://matchabinu.hashnode.dev/my-beginner-steps-to-computer-science">blog</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <style>
-    h1 {
-      font-family: "Arial", sans-serif;
-      font-size: 36px;
-      color: blue;
-    }
-    h2 {
-      font-family: "Georgia", serif;
-      font-size: 28px;
-      color: blue;
-    }
+  <section id="profile">
+       <div class="section_pic-container">
+           <img src="profile-pic.png" alt="Ayomide profile picture" />
+       </div>
+       <div class="section__text">
+          <h1 class="title">hey, ayomide here 👋</h1>
+          <p class="section__text__p2">20 year old Web Developer and Designer from United States. I like programming fun projects.</p>
+              <div class="btn-container">
+                 <button 
+                   class="btn btn-color-2"
+                   onclick="window.open('./resume.pdf')"
+                 >Resume</button>
+              </div>
 
-    h3 {
-      font-family: "Courier New", monospace;
-      font-size: 22px;
-      color: blue;
-    }
+              <div id="socials-container">
+                  <img src="./linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ayomide-oshilaja/'">
+                  <img src="./github.png" alt="My Github Profile" class="icon" onclick="location.href='https://github.com/Amy23m'">
+              </div>
+        </div>
+  </section>
 
-    /* Styling links */
-    a {
-      text-decoration: none;
-      color: #008cba;
-    }
+  <section id="tech-stack" class="tech-stack">
+    <h1>Tech Stack</h1>
+    <div class="stack-icons">
+        <div class="tech-item">
+            <img src="./logos/4.png" alt="HTML" class="icon">
+            <p>HTML</p>
+        </div>
+        <div class="tech-item">
+            <img src="./logos/5.png" alt="CSS" class="icon">
+            <p>CSS</p>
+        </div>
+        <div class="tech-item">
+            <img src="./logos/7.png" alt="JavaScript" class="icon">
+            <p>JavaScript</p>
+        </div>
+        <div class="tech-item">
+            <img src="./logos/6.png" alt="React" class="icon">
+            <p>React</p>
+        </div>
+      </div>
+  <div class="stack-icons">
+        <div class="tech-item">
+            <img src="./logos/8.png" alt="Java" class="icon">
+            <p>Java</p>
+        </div>
+  <div class="tech-item">
+            <img src="./logos/C.png" alt="C" class="icon">
+            <p>C</p>
+        </div>
+      <div class="tech-item">
+            <img src="./logos/C++.png" alt="C++" class="icon">
+            <p>C++</p>
+        </div>
+        <!-- Add more technologies as needed -->
+    </div>
+</section>
 
-    a:hover {
-      color: #ff6347;
-    }
-
-    /* Navigation styles */
-    nav {
-      background-color: #333;
-      padding: 10px;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    /* Layout styling */
-    body {
-      font-family: "Arial", sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    section {
-      padding: 20px;
-      margin: 10px;
-    }
-
-    .parent {
-      background-color: #f9f9f9;
-    }
-
-    .child {
-      background-color: #e0e0e0;
-      margin: 10px 0;
-    }
-  </style>
-
-  <body>
-    <h1>About me</h1>
-    <p>
-      Hello, My name is Ayomide. I am a sophomore studying computer science with
-      minor in media Arts and science.
-    </p>
-
-    <section>
-      <h2>My Goals</h2>
-      <p>My goal is to become a software enginner</p>
-    </section>
-
-    <section>
-      <h2>Hobbies</h2>
-      <p>Singing, Reading, Painting</p>
-      <p>ps. I like cats</p>
-    </section>
-
-    <img src="https://imgflip.com/s/meme/Smiling-Cat.jpg" />
-
-    <a
-      href="https://www.google.com/search?q=cats+meme&sca_esv=03a1954e09502d7b&rlz=1C5CHFA_enUS1078US1078&udm=2&biw=614&bih=733&ei=RiccZ8WeGLnLkPIP7-TJuAY&ved=0ahUKEwjF2aey1aqJAxW5JUQIHW9yEmcQ4dUDCBA&uact=5&oq=cats+meme&gs_lp=EgNpbWciCWNhdHMgbWVtZTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgARIhRRQpQZYsA1wAXgAkAEAmAE1oAH7AaoBATW4AQPIAQD4AQGYAgagApECwgINEAAYgAQYsQMYQxiKBcICBhAAGAcYHsICCBAAGIAEGLEDwgIQEAAYgAQYsQMYQxiDARiKBcICChAAGIAEGEMYigWYAwCIBgGSBwE2oAemGA&sclient=img#imgrc=qfCOxIOqo5kGBM&imgdii=x1IbGW2YKjaa5M"
-      >Link to cat Memes</a
-    >
-  </body>
+ 
+    
+ <script src="script.js"></script>
+</body>
 </html>
