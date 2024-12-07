@@ -196,3 +196,26 @@ section {
     font-weight: light;
 
 }
+
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#theme-toggle {
+    display: flex;
+    top: 40vh; 
+    left: 85rem; 
+    z-index: 20; 
+}
